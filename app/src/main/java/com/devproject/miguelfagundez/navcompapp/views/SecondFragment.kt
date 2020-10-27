@@ -13,7 +13,8 @@ class SecondFragment : Fragment(R.layout.fragment_second) {
         super.onViewCreated(view, savedInstanceState)
 
         btnSecondFragment.setOnClickListener {
-            val action = SecondFragmentDirections.actionSecondFragmentToThirdFragment()
+            val sendData = etSendData.text.toString()
+            val action = SecondFragmentDirections.actionSecondFragmentToThirdFragment(sendData)
             findNavController().navigate(action)
         }
     }

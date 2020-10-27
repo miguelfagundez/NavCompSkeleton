@@ -20,6 +20,16 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"/>
 
+    <EditText
+        android:id="@+id/etSendData"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_margin="20dp"
+        android:hint="Send some data"
+        app:layout_constraintTop_toBottomOf="@id/tvSecondFragment"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
     <Button
         android:id="@+id/btnSecondFragment"
         android:layout_width="match_parent"
@@ -27,7 +37,7 @@
         android:layout_marginTop="20dp"
         android:text="Go to Third Fragment"
         android:textAllCaps="false"
-        app:layout_constraintTop_toBottomOf="@id/tvSecondFragment"
+        app:layout_constraintTop_toBottomOf="@id/etSendData"
         app:layout_constraintStart_toStartOf="@id/tvSecondFragment"
         app:layout_constraintEnd_toEndOf="@id/tvSecondFragment"/>
 </androidx.constraintlayout.widget.ConstraintLayout>

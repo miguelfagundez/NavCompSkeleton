@@ -42,5 +42,8 @@
             app:exitAnim="@anim/out_top"
             app:popEnterAnim="@anim/in_top"
             app:popExitAnim="@anim/out_bottom" />
+        <argument
+            android:name="data"
+            app:argType="string" />
     </fragment>
 </navigation>
