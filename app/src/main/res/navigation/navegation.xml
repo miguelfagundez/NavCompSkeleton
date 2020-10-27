@@ -41,7 +41,9 @@
             app:enterAnim="@anim/in_bottom"
             app:exitAnim="@anim/out_top"
             app:popEnterAnim="@anim/in_top"
-            app:popExitAnim="@anim/out_bottom" />
+            app:popExitAnim="@anim/out_bottom"
+            app:popUpTo="@id/firstFragment"
+            app:popUpToInclusive="true" />
         <argument
             android:name="data"
             app:argType="string" />
