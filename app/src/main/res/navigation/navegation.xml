@@ -8,15 +8,39 @@
         android:id="@+id/firstFragment"
         android:name="com.devproject.miguelfagundez.navcompapp.views.FirstFragment"
         android:label="fragment_first"
-        tools:layout="@layout/fragment_first" />
+        tools:layout="@layout/fragment_first" >
+        <action
+            android:id="@+id/action_firstFragment_to_secondFragment"
+            app:destination="@id/secondFragment"
+            app:enterAnim="@anim/in_right"
+            app:exitAnim="@anim/out_left"
+            app:popEnterAnim="@anim/in_left"
+            app:popExitAnim="@anim/out_right" />
+    </fragment>
     <fragment
         android:id="@+id/secondFragment"
         android:name="com.devproject.miguelfagundez.navcompapp.views.SecondFragment"
         android:label="fragment_second"
-        tools:layout="@layout/fragment_second" />
+        tools:layout="@layout/fragment_second" >
+        <action
+            android:id="@+id/action_secondFragment_to_thirdFragment"
+            app:destination="@id/thirdFragment"
+            app:enterAnim="@anim/in_right"
+            app:exitAnim="@anim/out_left"
+            app:popEnterAnim="@anim/in_left"
+            app:popExitAnim="@anim/out_right" />
+    </fragment>
     <fragment
         android:id="@+id/thirdFragment"
         android:name="com.devproject.miguelfagundez.navcompapp.views.ThirdFragment"
         android:label="fragment_third"
-        tools:layout="@layout/fragment_third" />
+        tools:layout="@layout/fragment_third" >
+        <action
+            android:id="@+id/action_thirdFragment_to_firstFragment"
+            app:destination="@id/firstFragment"
+            app:enterAnim="@anim/in_bottom"
+            app:exitAnim="@anim/out_top"
+            app:popEnterAnim="@anim/in_top"
+            app:popExitAnim="@anim/out_bottom" />
+    </fragment>
 </navigation>

@@ -25,7 +25,7 @@
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:layout_marginTop="20dp"
-        android:text="Go to Second Fragment"
+        android:text="Go to Third Fragment"
         android:textAllCaps="false"
         app:layout_constraintTop_toBottomOf="@id/tvSecondFragment"
         app:layout_constraintStart_toStartOf="@id/tvSecondFragment"
