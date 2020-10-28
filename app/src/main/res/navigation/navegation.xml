@@ -53,4 +53,16 @@
         android:name="com.devproject.miguelfagundez.navcompapp.views.FourthFragment"
         android:label="Fourth"
         tools:layout="@layout/fragment_fourth" />
+    <fragment
+        android:id="@+id/globalFragment"
+        android:name="com.devproject.miguelfagundez.navcompapp.views.GlobalFragment"
+        android:label="Global"
+        tools:layout="@layout/fragment_global" />
+    <action
+        android:id="@+id/action_global_globalFragment"
+        app:destination="@id/globalFragment"
+        app:enterAnim="@anim/in_top"
+        app:exitAnim="@anim/out_bottom"
+        app:popEnterAnim="@anim/in_bottom"
+        app:popExitAnim="@anim/out_top" />
 </navigation>

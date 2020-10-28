@@ -6,10 +6,13 @@ import android.view.Menu
 import android.view.MenuItem
 import android.view.View
 import androidx.navigation.NavController
+import androidx.navigation.NavGraphNavigator
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.fragment.findNavController
 import androidx.navigation.ui.onNavDestinationSelected
 import androidx.navigation.ui.setupActionBarWithNavController
+import com.devproject.miguelfagundez.navcompapp.views.FirstFragmentDirections
+import com.devproject.miguelfagundez.navcompapp.views.GlobalFragmentDirections
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -34,7 +37,16 @@ class MainActivity : AppCompatActivity() {
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        return item.onNavDestinationSelected(navController) || super.onOptionsItemSelected(item)
+        return if(item.itemId == R.id.globalFragmentItem) {
+            val action = NavegationDirections.actionGlobalGlobalFragment()
+
+            navController.navigate(action)
+            true
+        }else{
+            item.onNavDestinationSelected(navController) || super.onOptionsItemSelected(item)
+        }
+
+
     }
 
     override fun onSupportNavigateUp(): Boolean {

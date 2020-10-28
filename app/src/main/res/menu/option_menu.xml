@@ -4,11 +4,19 @@
     <item
         android:id="@+id/firstFragment"
         android:title="First"
-        app:showAsAction="never" />
+        app:showAsAction="never"
+        android:orderInCategory="1"/>
 
     <item
         android:id="@+id/fourthFragment"
         android:title="Fourth"
         android:menuCategory="secondary"
-        app:showAsAction="never" />
+        app:showAsAction="never"
+        android:orderInCategory="2"/>
+
+    <item
+        android:id="@+id/globalFragmentItem"
+        android:title="Global Fragment"
+        app:showAsAction="never"
+        android:orderInCategory="3"/>
 </menu>
