@@ -48,4 +48,9 @@
             android:name="data"
             app:argType="string" />
     </fragment>
+    <fragment
+        android:id="@+id/fourthFragment"
+        android:name="com.devproject.miguelfagundez.navcompapp.views.FourthFragment"
+        android:label="Fourth"
+        tools:layout="@layout/fragment_fourth" />
 </navigation>
